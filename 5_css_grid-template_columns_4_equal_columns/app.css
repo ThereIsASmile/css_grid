@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#container {
+    margin: 0 auto;
+    width: 98%;
+    height: 900px;
+    border: 12px solid black;
+
+    /* Grid controls the inside of this container. Before adding grid the boxes were only taking up the amount of space that the text had or whatever content is in that div. Adding display grid made the boxes stretch out to the height specified above. Did not work when percentage was used. Has to be pixels.*/
+    display: grid;
+    /* inline inside the grid makes the grid container behave as an inline element instead of a block element */
+     /* display: grid; makes grid container behave as an block element relative to it's neighboring containers*/
+     grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box {
+    font-size: 1.5rem;
+    opacity: 100%;
+}
